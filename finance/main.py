@@ -59,7 +59,7 @@ def translate_text():
 
 @app.route('/translate_to_french', methods=['GET'])
 def translate_to_french_api():
-    # Get query parameters for translation
+    # Get query parameters for translation a
     text_to_translate = request.args.get('text', default='')
     return translate_to_french(text_to_translate)
 
