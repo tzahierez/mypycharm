@@ -1,0 +1,18 @@
+2023-12-03 09:49:07,329 - root - INFO - Hello, World!
+2023-12-03 09:49:07,329 - app - INFO - Flask application starting up...
+2023-12-03 09:49:07,342 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.209:5000
+2023-12-03 09:49:07,342 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-12-03 09:49:13,528 - app - INFO - Received request to /hello
+2023-12-03 09:49:13,530 - werkzeug - INFO - 127.0.0.1 - - [03/Dec/2023 09:49:13] "GET /hello HTTP/1.1" 200 -
+2023-12-03 09:49:22,870 - app - INFO - Received request to /chat
+2023-12-03 09:49:22,870 - app - INFO - User Input: Hello, how are you?
+2023-12-03 09:49:22,870 - app - INFO - User ID: default_user
+2023-12-03 09:49:22,871 - app - INFO - Conversation History: []
+2023-12-03 09:49:22,898 - app - INFO - Making request to OpenAI API
+2023-12-03 09:49:27,020 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2023-12-03 09:49:27,026 - app - INFO - Received response from OpenAI API
+2023-12-03 09:49:27,026 - app - INFO - Response Text: Hello! I'm an AI assistant, so I don't have feelings, but I'm here to help you. How can I assist you today?
+2023-12-03 09:49:27,026 - werkzeug - INFO - 127.0.0.1 - - [03/Dec/2023 09:49:27] "POST /chat HTTP/1.1" 200 -
